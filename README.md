@@ -26,7 +26,7 @@ func main() {
     user := goctory.NewStruct[UserData](
 		WithAttr[UserData, int]("Id", 1),
 		WithAttr[UserData, string]("Name", "arthur"),
-		WithAttr[UserData, int]("Age", 22), //不存在的属性会被忽略
+		WithAttr[UserData, int]("Age", 22),
 	)
 }
 ```
