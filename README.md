@@ -15,7 +15,6 @@ go version >= 1.18
 It is very simple to use
 
 ```golang
-
 type UserData struct {
     Id int
     Name string
@@ -24,9 +23,9 @@ type UserData struct {
 
 func main() {
     user := goctory.NewStruct[UserData](
-		WithAttr[UserData, int]("Id", 1),
-		WithAttr[UserData, string]("Name", "arthur"),
-		WithAttr[UserData, int]("Age", 22),
+		goctory.WithAttr[UserData, int]("Id", 1),
+		goctory.WithAttr[UserData, string]("Name", "arthur"),
+		goctory.WithAttr[UserData, int]("Age", 22),
 	)
 }
 ```
